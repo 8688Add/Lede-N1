@@ -10,7 +10,7 @@
 
 #添加额外软件包
 #git clone https://github.com/lisaac/luci-app-dockerman.git package/openwrt-packages/luci-app-dockerman
-#svn co https://github.com/xiaorouji/openwrt-package/trunk/package/brook package/openwrt-packages/brook
+svn co https://github.com/xiaorouji/openwrt-package/trunk/package/brook package/openwrt-packages/brook
 svn co https://github.com/xiaorouji/openwrt-package/trunk/package/chinadns-ng package/openwrt-packages/chinadns-ng
 svn co https://github.com/xiaorouji/openwrt-package/trunk/package/trojan-go package/openwrt-packages/trojan-go
 svn co https://github.com/xiaorouji/openwrt-package/trunk/package/trojan-plus package/openwrt-packages/trojan-plus
