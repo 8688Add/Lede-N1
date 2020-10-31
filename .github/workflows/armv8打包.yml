@@ -113,7 +113,7 @@ jobs:
       id: build
       run: |
         cd /opt
-        sudo https://github.com/8688Add/N1-flippy/releases/download/Armv8/img+0.tar
+        sudo wget https://github.com/8688Add/N1-flippy/releases/download/Armv8/img+0.tar
         sudo tar xvf *.tar
         sudo xz -d *.img.xz
         sudo tar zxvf *.tar.gz
