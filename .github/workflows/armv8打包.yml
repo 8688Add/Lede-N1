@@ -109,7 +109,7 @@ jobs:
       uses: actions/checkout@main
 #    - name: Build firmware #打包
       id: build
-#      run: |
+      run: |
         cd /opt
         sudo wget https://github.com/binge8/op/releases/download/公告/img+0.tar
         sudo tar xvf *.tar
@@ -153,7 +153,7 @@ jobs:
       uses: actions/checkout@main
 #    - name: Build firmware #打包
       id: build
-#      run: |
+      run: |
         cd /opt
         sudo wget https://github.com/binge8/op/releases/download/公告/img+.tar
         sudo tar xvf *.tar
