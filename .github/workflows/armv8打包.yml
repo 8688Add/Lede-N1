@@ -27,14 +27,14 @@ jobs:
       id: build
       run: |
         cd /opt
-        sudo wget https://github.com/binge8/op/releases/download/公告/img+0.tar
+        sudo wget https://github.com/8688Add/N1-flippy/releases/download/Armv8-Armbian/img+0.tar
         sudo tar xvf *.tar
         sudo xz -d *.img.xz
         sudo tar zxvf *.tar.gz
         sudo mkdir imgs
         sudo mv *.img imgs
         cd /opt/openwrt
-        sudo wget https://github.com/binge8/op/releases/download/armv8开发版/openwrt-armvirt-64-default-rootfs.tar.gz
+        sudo wget https://github.com/8688Add/N1-flippy/releases/download/Armv8-Armbian/openwrt-armvirt-64-default-rootfs.tar.gz
         sudo ./mk_s905x3_opimg.sh
         sudo ./mk_n1_opimg.sh
         sudo ./mk_beikeyun_opimg.sh
@@ -71,14 +71,14 @@ jobs:
       id: build
       run: |
         cd /opt
-        sudo wget https://github.com/binge8/op/releases/download/公告/img+.tar
+        sudo wget https://github.com/8688Add/N1-flippy/releases/download/Armv8-Armbian/img+.tar
         sudo tar xvf *.tar
         sudo xz -d *.img.xz
         sudo tar zxvf *.tar.gz
         sudo mkdir imgs
         sudo mv *.img imgs
         cd /opt/openwrt
-        sudo wget https://github.com/binge8/op/releases/download/armv8开发版/openwrt-armvirt-64-default-rootfs.tar.gz
+        sudo wget https://github.com/8688Add/N1-flippy/releases/download/Armv8-Armbian/openwrt-armvirt-64-default-rootfs.tar.gz
         sudo ./mk_s905x3_opimg.sh
         cd /opt/openwrt/tmp
         sudo bzip2 *.img
