@@ -105,9 +105,9 @@ jobs:
   wbuild0: #稳定+0版
     runs-on: ubuntu-18.04
     steps:
-#    - name: Checkout
+    #- name: Checkout
       uses: actions/checkout@main
-#    - name: Build firmware #打包
+    #- name: Build firmware #打包
       id: build
       run: |
         cd /opt
@@ -127,13 +127,13 @@ jobs:
         cd /opt/openwrt/tmp
         sudo bzip2 *.img
         echo "::set-output name=status::success"
-#    - name: Upload bin directory #上传artifact
+    - name: Upload bin directory #上传artifact
       uses: actions/upload-artifact@main
       if: steps.build.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true' && !cancelled()
       with:
         name: w+0
         path: /opt/openwrt/tmp/*.img.bz2
-#    - name: Create release #发布
+    - name: Create release #发布
       uses: ncipollo/release-action@v1
       if: env.UPLOAD_RELEASE == 'true' && steps.build.outputs.status == 'success' && !cancelled()
       with:
@@ -149,9 +149,9 @@ jobs:
   wbuild: #稳定+版
     runs-on: ubuntu-18.04
     steps:
-#    - name: Checkout
+    - name: Checkout
       uses: actions/checkout@main
-#    - name: Build firmware #打包
+    - name: Build firmware #打包
       id: build
       run: |
         cd /opt
@@ -167,13 +167,13 @@ jobs:
         cd /opt/openwrt/tmp
         sudo bzip2 *.img
         echo "::set-output name=status::success"
-#    - name: Upload bin directory #上传artifact
+    - name: Upload bin directory #上传artifact
       uses: actions/upload-artifact@main
       if: steps.build.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true' && !cancelled()
       with:
         name: w+
         path: /opt/openwrt/tmp/*.img.bz2
-#    - name: Create release #发布
+    - name: Create release #发布
       uses: ncipollo/release-action@v1
       if: env.UPLOAD_RELEASE == 'true' && steps.build.outputs.status == 'success' && !cancelled()
       with:
