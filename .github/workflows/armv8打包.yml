@@ -107,7 +107,7 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@main
-    #- name: Build firmware #打包
+    - name: Build firmware #打包
       id: build
       run: |
         cd /opt
@@ -186,7 +186,7 @@ jobs:
         artifacts: /opt/openwrt/tmp/*.img.bz2
 
   over:
-    needs: [kbuild0, kbuild, wbuild0, wbuild]
+    needs: [kbuild0, kbuild]
     runs-on: ubuntu-18.04
     steps:
     #- name: WeChat notification #微信推送
