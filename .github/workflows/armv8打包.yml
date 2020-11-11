@@ -105,7 +105,7 @@ jobs:
   wbuild0: #稳定+0版
     runs-on: ubuntu-18.04
     steps:
-    #- name: Checkout
+    - name: Checkout
       uses: actions/checkout@main
     #- name: Build firmware #打包
       id: build
