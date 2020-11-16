@@ -9,6 +9,7 @@
 #sed -i '92d' package/system/opkg/Makefile
 
 #添加额外软件包
+#rm -rf package/lean/luci-app-dockerman
 #git clone https://github.com/lisaac/luci-app-dockerman.git package/openwrt-packages/luci-app-dockerman
 svn co https://github.com/xiaorouji/openwrt-package/trunk/package/brook package/openwrt-packages/brook
 svn co https://github.com/xiaorouji/openwrt-package/trunk/package/chinadns-ng package/openwrt-packages/chinadns-ng
