@@ -19,6 +19,8 @@ git clone https://github.com/lisaac/luci-app-dockerman.git package/openwrt-packa
 #svn co https://github.com/xiaorouji/openwrt-package/trunk/package/trojan-plus package/openwrt-packages/trojan-plus
 #svn co https://github.com/xiaorouji/openwrt-package/trunk/package/ssocks package/openwrt-packages/ssocks
 #svn co https://github.com/xiaorouji/openwrt-package/trunk/lienol/luci-app-passwall package/openwrt-packages/luci-app-passwall
+rm -rf package/lean/xray
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk/xray package/lean/xray
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
 rm -rf package/lean/luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
@@ -26,7 +28,7 @@ git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-ap
 #svn co https://github.com/siropboy/mypackages/trunk/luci-app-autopoweroff package/openwrt-packages/luci-app-autopoweroff
 #svn co https://github.com/siropboy/mypackages/trunk/luci-app-control-timewol package/openwrt-packages/luci-app-control-timewol
 rm -rf package/lean/v2ray
-svn co https://github.com/8688Add/Lienol-openwrt-package/trunk/package/v2ray package/v2ray
+svn co https://github.com/8688Add/Lienol-openwrt-package/trunk/package/v2ray package/lean/v2ray
 git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
 git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/openwrt-packages/luci-app-jd-dailybonus
