@@ -21,6 +21,8 @@ git clone https://github.com/lisaac/luci-app-dockerman.git package/openwrt-packa
 #svn co https://github.com/xiaorouji/openwrt-package/trunk/lienol/luci-app-passwall package/openwrt-packages/luci-app-passwall
 #rm -rf package/lean/xray
 #svn co https://github.com/xiaorouji/openwrt-passwall/trunk/xray package/lean/xray
+svn co https://github.com/garypang13/openwrt-packages/trunk/smartdns package/smartdns
+git clone https://github.com/garypang13/luci-app-bypass.git package/luci-app-bypass
 git clone https://github.com/Lienol/openwrt-package.git package/openwrt-package
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
 rm -rf package/lean/luci-theme-argon
@@ -43,8 +45,8 @@ git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/openwr
 git clone https://github.com/tuanqing/install-program package/install-program
 git clone https://github.com/vernesong/OpenClash.git package/luci-app-openclash
 svn co https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom/trunk/luci-theme-infinityfreedom package/openwrt-packages/luci-theme-infinityfreedom
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/luci-app-gost package/lean/luci-app-gost
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/gost package/lean/gost
+#svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/luci-app-gost package/lean/luci-app-gost
+#svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/gost package/lean/gost
 #svn co https://github.com/8688Add/sirpdboy-package/trunk/luci-app-ddnsto package/luci-app-ddnsto
 
 sed -i 's/"Turbo ACC 网络加速"/"网络加速"/g' package/lean/luci-app-flowoffload/po/zh-cn/flowoffload.po
@@ -54,6 +56,10 @@ sed -i 's/"Turbo ACC 网络加速"/"网络加速"/g' package/lean/luci-app-sfe/p
 #赋予koolddns权限
 #chmod 0755 package/openwrt-packages/luci-app-koolddns/root/etc/init.d/koolddns
 #chmod 0755 package/openwrt-packages/luci-app-koolddns/root/usr/share/koolddns/aliddns
+
+#修改bypass的makefile
+find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
+find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-server/shadowsocksr-libev-server/g' {}
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
