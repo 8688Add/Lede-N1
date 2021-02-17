@@ -34,7 +34,7 @@ git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-ap
 #svn co https://github.com/8688Add/Lienol-openwrt-package/trunk/package/v2ray package/lean/v2ray
 git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
 git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
-git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/openwrt-packages/luci-app-jd-dailybonus
+#git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/luci-app-jd-dailybonus
 #git clone https://github.com/8688Add/luci-app-vssr-plus.git package/luci-app-vssr-plus
 #git clone https://github.com/bin20088/luci-theme-argon-mc.git package/openwrt-packages/luci-theme-argon-mc
 #git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/openwrt-packages/luci-theme-opentomcat
