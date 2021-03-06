@@ -27,7 +27,7 @@ jobs:
       id: build
       run: |
         cd /opt
-        sudo wget https://github.com/8688Add/N1-flippy/releases/download/Armbian-54/img+0.tar
+        sudo wget https://github.com/8688Add/N1-Actions-Dabao/releases/download/Armbian-54/img+0.tar
         sudo tar xvf *.tar
         sudo xz -d *.img.xz
         sudo tar zxvf *.tar.gz
@@ -74,7 +74,7 @@ jobs:
       id: build
       run: |
         cd /opt
-        sudo wget https://github.com/8688Add/N1-flippy/releases/download/Armbian-54/img+.tar
+        sudo wget https://github.com/8688Add/N1-Actions-Dabao/releases/download/Armbian-54/img+.tar
         sudo tar xvf *.tar
         sudo xz -d *.img.xz
         sudo tar zxvf *.tar.gz
@@ -120,7 +120,7 @@ jobs:
       id: build
       run: |
         cd /opt
-        sudo wget https://github.com/8688Add/N1-flippy/releases/download/Armbian-54/img+0.tar
+        sudo wget https://github.com/8688Add/N1-Actions-Dabao/releases/download/Armbian-54/img+0.tar
         sudo tar xvf *.tar
         sudo xz -d *.img.xz
         sudo tar zxvf *.tar.gz
@@ -167,7 +167,7 @@ jobs:
       id: build
       run: |
         cd /opt
-        sudo wget https://github.com/8688Add/N1-flippy/releases/download/Armbian-54/img+.tar
+        sudo wget https://github.com/8688Add/N1-Actions-Dabao/releases/download/Armbian-54/img+.tar
         sudo tar xvf *.tar
         sudo xz -d *.img.xz
         sudo tar zxvf *.tar.gz
