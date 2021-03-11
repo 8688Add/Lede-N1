@@ -41,6 +41,8 @@ jobs:
         sudo ./mk_s922x_gtking.sh
         sudo ./mk_rk3328_beikeyun.sh
         sudo ./mk_rk3328_l1pro.sh
+        sudo ./mk_h6_vplus.sh
+        sudo ./mk_s905x2_x96max.sh
         cd /opt/openwrt/tmp
         sudo bzip2 *.img
         echo "::set-output name=status::success"
@@ -72,7 +74,7 @@ jobs:
       id: build
       run: |
         cd /opt
-        sudo wget https://github.com/8688Add/N1-Actions-Dabao/releases/download/Armbian-53/img+.tar
+        sudo wget https://github.com/8688Add/N1-Actions-Dabao/releases/download/Armbian-54/img+.tar
         sudo tar xvf *.tar
         sudo xz -d *.img.xz
         sudo tar zxvf *.tar.gz
@@ -82,12 +84,12 @@ jobs:
         sudo wget https://github.com/8688Add/N1-Actions-Dabao/releases/download/armv8开发版/openwrt-armvirt-64-default-rootfs.tar.gz
         sudo ./mk_s905x3_multi.sh
         sudo ./mk_s905d_n1.sh
-        sudo ./OLD_mk_n1_opimg.sh
+        sudo ./mk_h6_vplus.sh
         sudo ./mk_s912_zyxq.sh
         sudo ./mk_s922x_gtking.sh
         sudo ./mk_rk3328_beikeyun.sh
         sudo ./mk_rk3328_l1pro.sh
-        sudo ./n1-to-vplus.sh
+        sudo ./mk_s905x2_x96max.sh
         cd /opt/openwrt/tmp
         sudo bzip2 *.img
         echo "::set-output name=status::success"
@@ -132,6 +134,8 @@ jobs:
         sudo ./mk_s922x_gtking.sh
         sudo ./mk_rk3328_beikeyun.sh
         sudo ./mk_rk3328_l1pro.sh
+        sudo ./mk_h6_vplus.sh
+        sudo ./mk_s905x2_x96max.sh
         cd /opt/openwrt/tmp
         sudo bzip2 *.img
         echo "::set-output name=status::success"
@@ -163,7 +167,7 @@ jobs:
       id: build
       run: |
         cd /opt
-        sudo wget https://github.com/8688Add/N1-Actions-Dabao/releases/download/Armbian-53/img+.tar
+        sudo wget https://github.com/8688Add/N1-Actions-Dabao/releases/download/Armbian-54/img+.tar
         sudo tar xvf *.tar
         sudo xz -d *.img.xz
         sudo tar zxvf *.tar.gz
@@ -173,12 +177,12 @@ jobs:
         sudo wget https://github.com/8688Add/N1-Actions-Dabao/releases/download/armv8稳定版/openwrt-armvirt-64-default-rootfs.tar.gz
         sudo ./mk_s905x3_multi.sh
         sudo ./mk_s905d_n1.sh
-        sudo ./OLD_mk_n1_opimg.sh
+        sudo ./mk_h6_vplus.sh
         sudo ./mk_s912_zyxq.sh
         sudo ./mk_s922x_gtking.sh
         sudo ./mk_rk3328_beikeyun.sh
         sudo ./mk_rk3328_l1pro.sh
-        sudo ./n1-to-vplus.sh
+        sudo ./mk_s905x2_x96max.sh
         cd /opt/openwrt/tmp
         sudo bzip2 *.img
         echo "::set-output name=status::success"
