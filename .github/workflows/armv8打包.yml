@@ -84,7 +84,6 @@ jobs:
         sudo wget https://github.com/8688Add/N1-Actions-Dabao/releases/download/armv8开发版/openwrt-armvirt-64-default-rootfs.tar.gz
         sudo ./mk_s905x3_multi.sh
         sudo ./mk_s905d_n1.sh
-        sudo ./mk_h6_vplus.sh
         sudo ./mk_s912_zyxq.sh
         sudo ./mk_s922x_gtking.sh
         sudo ./mk_rk3328_beikeyun.sh
@@ -176,7 +175,6 @@ jobs:
         sudo wget https://github.com/8688Add/N1-Actions-Dabao/releases/download/armv8稳定版/openwrt-armvirt-64-default-rootfs.tar.gz
         sudo ./mk_s905x3_multi.sh
         sudo ./mk_s905d_n1.sh
-        sudo ./mk_h6_vplus.sh
         sudo ./mk_s912_zyxq.sh
         sudo ./mk_s922x_gtking.sh
         sudo ./mk_rk3328_beikeyun.sh
