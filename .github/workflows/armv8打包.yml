@@ -85,9 +85,9 @@ jobs:
         sudo ./mk_s905x3_multi.sh
         sudo ./mk_s905d_n1.sh
         sudo ./mk_s912_zyxq.sh
-        sudo ./mk_s922x_gtking.sh
         sudo ./mk_rk3328_beikeyun.sh
         sudo ./mk_rk3328_l1pro.sh
+        sudo ./mk_h6_vplus.sh
         cd /opt/openwrt/tmp
         sudo bzip2 *.img
         echo "::set-output name=status::success"
@@ -176,7 +176,7 @@ jobs:
         sudo ./mk_s905x3_multi.sh
         sudo ./mk_s905d_n1.sh
         sudo ./mk_s912_zyxq.sh
-        sudo ./mk_s922x_gtking.sh
+        sudo ./mk_h6_vplus.sh
         sudo ./mk_rk3328_beikeyun.sh
         sudo ./mk_rk3328_l1pro.sh
         cd /opt/openwrt/tmp
