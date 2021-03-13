@@ -39,12 +39,10 @@ jobs:
         sudo ./mk_h6_vplus.sh
         sudo ./mk_s905x2_x96max.sh
         sudo ./mk_s905d_n1.sh
-        sudo ./OLD_mk_n1_opimg.sh
         sudo ./mk_s912_zyxq.sh
         sudo ./mk_s922x_gtking.sh
         sudo ./mk_rk3328_beikeyun.sh
         sudo ./mk_rk3328_l1pro.sh
-        sudo ./OLD_n1-to-vplus.sh
         cd /opt/openwrt/tmp
         sudo bzip2 *.img
         echo "::set-output name=status::success"
@@ -88,12 +86,10 @@ jobs:
         sudo ./mk_h6_vplus.sh
         sudo ./mk_s905x2_x96max.sh
         sudo ./mk_s905d_n1.sh
-        sudo ./OLD_mk_n1_opimg.sh
         sudo ./mk_s912_zyxq.sh
         sudo ./mk_s922x_gtking.sh
         sudo ./mk_rk3328_beikeyun.sh
         sudo ./mk_rk3328_l1pro.sh
-        sudo ./OLD_n1-to-vplus.sh
         cd /opt/openwrt/tmp
         sudo bzip2 *.img
         echo "::set-output name=status::success"
@@ -136,12 +132,10 @@ jobs:
         sudo ./mk_h6_vplus.sh
         sudo ./mk_s905x2_x96max.sh
         sudo ./mk_s905d_n1.sh
-        sudo ./OLD_mk_n1_opimg.sh
         sudo ./mk_s912_zyxq.sh
         sudo ./mk_s922x_gtking.sh
         sudo ./mk_rk3328_beikeyun.sh
         sudo ./mk_rk3328_l1pro.sh
-        sudo ./OLD_n1-to-vplus.sh
         cd /opt/openwrt/tmp
         sudo bzip2 *.img
         echo "::set-output name=status::success"
@@ -185,12 +179,10 @@ jobs:
         sudo ./mk_h6_vplus.sh
         sudo ./mk_s905x2_x96max.sh
         sudo ./mk_s905d_n1.sh
-        sudo ./OLD_mk_n1_opimg.sh
         sudo ./mk_s912_zyxq.sh
         sudo ./mk_s922x_gtking.sh
         sudo ./mk_rk3328_beikeyun.sh
         sudo ./mk_rk3328_l1pro.sh
-        sudo ./OLD_n1-to-vplus.sh
         cd /opt/openwrt/tmp
         sudo bzip2 *.img
         echo "::set-output name=status::success"
