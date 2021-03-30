@@ -83,7 +83,7 @@ jobs:
         sudo mkdir imgs
         sudo mv *.img imgs
         cd /opt/openwrt
-        sudo wget https://github.com/8688Add/N1-Actions-Dabao/releases/download/armv8开发版/openwrt-armvirt-64-default-rootfs.tar.gz
+        sudo wget https://github.com/8688Add/Lede-N1/releases/download/armv8开发版/openwrt-armvirt-64-default-rootfs.tar.gz
         sudo ./mk_s905x3_multi.sh
         sudo ./mk_h6_vplus.sh
         sudo ./mk_s905x2_x96max.sh
@@ -124,14 +124,14 @@ jobs:
       id: build
       run: |
         cd /opt
-        sudo wget https://github.com/8688Add/N1-Actions-Dabao/releases/download/Armbian-55/img+0.tar
+        sudo wget https://github.com/8688Add/N1-Actions-Dabao/releases/download/Armbian-56/img+0.tar
         sudo tar xvf *.tar
         sudo xz -d *.img.xz
         sudo tar zxvf *.tar.gz
         sudo mkdir imgs
         sudo mv *.img imgs
         cd /opt/openwrt
-        sudo wget https://github.com/8688Add/N1-Actions-Dabao/releases/download/armv8稳定版/openwrt-armvirt-64-default-rootfs.tar.gz
+        sudo wget https://github.com/8688Add/Lede-N1/releases/download/armv8稳定版/openwrt-armvirt-64-default-rootfs.tar.gz
         sudo ./mk_s905x3_multi.sh
         sudo ./mk_h6_vplus.sh
         sudo ./mk_s905x2_x96max.sh
@@ -173,14 +173,14 @@ jobs:
       id: build
       run: |
         cd /opt
-        sudo wget https://github.com/8688Add/N1-Actions-Dabao/releases/download/Armbian-55/img+.tar
+        sudo wget https://github.com/8688Add/N1-Actions-Dabao/releases/download/Armbian-56/img+.tar
         sudo tar xvf *.tar
         sudo xz -d *.img.xz
         sudo tar zxvf *.tar.gz
         sudo mkdir imgs
         sudo mv *.img imgs
         cd /opt/openwrt
-        sudo wget https://github.com/8688Add/N1-Actions-Dabao/releases/download/armv8稳定版/openwrt-armvirt-64-default-rootfs.tar.gz
+        sudo wget https://github.com/8688Add/Lede-N1/releases/download/armv8稳定版/openwrt-armvirt-64-default-rootfs.tar.gz
         sudo ./mk_s905x3_multi.sh
         sudo ./mk_h6_vplus.sh
         sudo ./mk_s905x2_x96max.sh
