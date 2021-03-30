@@ -27,7 +27,7 @@ jobs:
       id: build
       run: |
         cd /opt
-        sudo wget https://github.com/8688Add/Lede-N1/releases/download/Armbian-56/img+0.tar
+        sudo wget https://github.com/8688Add/Lede-N1/releases/download/Armbian-55/img+0.tar
         sudo tar xvf *.tar
         sudo xz -d *.img.xz
         sudo tar zxvf *.tar.gz
@@ -76,7 +76,7 @@ jobs:
       id: build
       run: |
         cd /opt
-        sudo wget https://github.com/8688Add/Lede-N1/releases/download/Armbian-56/img+.tar
+        sudo wget https://github.com/8688Add/Lede-N1/releases/download/Armbian-55/img+.tar
         sudo tar xvf *.tar
         sudo xz -d *.img.xz
         sudo tar zxvf *.tar.gz
@@ -124,7 +124,7 @@ jobs:
       id: build
       run: |
         cd /opt
-        sudo wget https://github.com/8688Add/N1-Actions-Dabao/releases/download/Armbian-56/img+0.tar
+        sudo wget https://github.com/8688Add/N1-Actions-Dabao/releases/download/Armbian-55/img+0.tar
         sudo tar xvf *.tar
         sudo xz -d *.img.xz
         sudo tar zxvf *.tar.gz
@@ -173,7 +173,7 @@ jobs:
       id: build
       run: |
         cd /opt
-        sudo wget https://github.com/8688Add/N1-Actions-Dabao/releases/download/Armbian-56/img+.tar
+        sudo wget https://github.com/8688Add/N1-Actions-Dabao/releases/download/Armbian-55/img+.tar
         sudo tar xvf *.tar
         sudo xz -d *.img.xz
         sudo tar zxvf *.tar.gz
