@@ -9,8 +9,8 @@ on:
         description: 'warmv8'
         required: false
         default: 'false'
-  schedule:
-    - cron: 00 17 * * 5
+  #schedule:
+    #- cron: 00 17 * * 5
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/openwrt
